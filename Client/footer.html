@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>footer</title>
+    <!-- icon link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./Styles/index.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+      footer {
+        /* margin-top: 20px; */
+        background-color: #39394d;
+        padding: 20px 150px;
+        color: white;
+        border: none;
+      }
+
+      .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      #rightY {
+        margin-right: 10%;
+      }
+      .footer-content {
+        margin-bottom: 20px;
+        /* border: 1px solid white; */
+      }
+
+      .footer-content h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      .footer-content ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .footer-content ul li {
+        margin-bottom: 5px;
+      }
+
+      .footer-content ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: small;
+      }
+      .footer-content ul li a:hover {
+        text-decoration: underline;
+        color: white;
+      }
+      .social-icons a {
+        color: white;
+        margin-right: 10px;
+      }
+
+      .footer-text {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 12px;
+        color: white;
+      }
+      .footerY {
+        color: white;
+        border: 0.5px solid white;
+        margin-top: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+        cursor: pointer;
+      }
+      @media (max-width: 991px) {
+        #footerY {
+          display: flex;
+          flex-direction: column;
+        }
+        #footerY div {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-content">
+          <h3>About</h3>
+          <ul id="rightY">
+            <li><a href="#">VLink Blog</a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Integrations</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">ESG Responsibility</a></li>
+            <li><a href="#">Media Kit</a></li>
+            <li><a href="#">How to videos</a></li>
+            <li><a href="#">Developer Platform</a></li>
+            <li><a href="#">VLink Ventures</a></li>
+          </ul>
+        </div>
+        <div class="footer-content">
+          <h3>Download</h3>
+          <ul>
+            <li><a href="#">Meeting Client</a></li>
+            <li><a href="#">VLink Rooms Client</a></li>
+            <li><a href="#">Browser Extenstion</a></li>
+            <li><a href="#">Outlook Plug-in</a></li>
+            <li><a href="#">Lync Plug-in</a></li>
+            <li><a href="#">Android App</a></li>
+            <li><a href="#">VLink Virtual Backgrounds</a></li>
+          </ul>
+        </div>
+        <div class="footer-content">
+          <h3>Sales</h3>
+          <ul>
+            <li><a href="#">1.888.799.9666</a></li>
+            <li><a href="#">Contack Sales</a></li>
+            <li><a href="#">Plans & Pricing</a></li>
+            <li><a href="#">Request a Demo</a></li>
+            <li><a href="#">Webinars and Events</a></li>
+          </ul>
+        </div>
+        <div class="footer-content">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#">Test VLink</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Support Center</a></li>
+            <li><a href="#">Learning Center</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Developer Support</a></li>
+            <li>
+              <a href="#">Privacy,Security</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-content">
+          <h3>Language</h3>
+          <div class="footerY">English</div>
+          <h3>Currency</h3>
+
+          <div class="footerY">Indian Rupee</div>
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <p class="footer-text">
+        ©Copyright ©2023 VLink Video Communications, Inc. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
