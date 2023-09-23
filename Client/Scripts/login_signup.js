@@ -32,7 +32,7 @@
             password:s_passEl.value,
         }
         // console.log(payload)
-        fetch("https://pink-eagle-coat.cyclic.app/user/register",{
+        fetch("https://vlink-1fh2.onrender.com/user/register",{
             method:"POST",
             headers:{
                 "Content-type":"application/json"
@@ -66,7 +66,7 @@
             password:l_passEl.value,
         }
         // console.log(payload)
-        fetch("https://pink-eagle-coat.cyclic.app/user/login",{
+        fetch("https://vlink-1fh2.onrender.com/user/login",{
             method:"POST",
             headers:{
                 "Content-type":"application/json"
@@ -79,15 +79,43 @@
         let user=res.user
         localStorage.setItem("userInfo",JSON.stringify(user))
         if(res.msg=="login success"){
-            alert("login successful");
-            window.location.href="./plan.html"
+            // alert("login successful");
+            showSuccessAlertAndRedirect()
+            // window.location.href="./plans.html"
         }else{
-            alert("Wrong Credintials");
+            // alert("Wrong Credintials");
+            showErrorAlert()
         }
+
     })
         .catch(err=>console.log(err))
     })
 
+// Invoked when login successfull----------------------------------
+    function showSuccessAlertAndRedirect() {
+        Swal.fire({
+          icon: 'success',
+          title: 'Login Successful!',
+          text: 'You are now logged in.',
+          showConfirmButton: true,
+          confirmButtonText: 'OK'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            window.location.href = './plans.html';
+          }
+        });
+      }
+
+// Invoked when wrong credentials-------------------------------------
+      function showErrorAlert() {
+        Swal.fire({
+          icon: 'error',
+          title: 'Login Failed',
+          text: 'Invalid credentials. Please try again.',
+          showConfirmButton: true,
+          confirmButtonText: 'OK'
+        });
+      }
     
     // const onLogin=()=>{
     //     const payload={

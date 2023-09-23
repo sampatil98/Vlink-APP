@@ -16,8 +16,8 @@ app.use(cors());
 
 app.use("/paiduser",paiduserRouter)
 app.use("/user", userRouter)
-app.use(auth)
-app.use("/", postRouter)
+//app.use(auth)
+//app.use("/", postRouter)
 //console.log("$2b$05$50EGhIaIwjHjesQk3iPgAOp8DOKlmKpOpNJYpF1XyvLh5LKGR9Tl2"=="$2b$05$50EGhIaIwjHjesQk3iPgAOp8DOKlmKpOpNJYpF1XyvLh5LKGR9Tl2")
 app.listen(process.env.Port, async () => {
     try {

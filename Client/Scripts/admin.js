@@ -32,6 +32,7 @@ signout.addEventListener("click",()=>{
 
 // ----------------------------Get all Users--------------------------------------
 
+const addBox = document.querySelector(".details");
 const getButton = document.querySelector("#getAll")
 
 getButton.addEventListener("click",(e)=>{
@@ -78,7 +79,7 @@ getButton.addEventListener("click",(e)=>{
         remove.addEventListener("click",()=>{
           const confirmed = confirm("Are you sure you want to delete this item?");
               if (confirmed) {
-                deleteProduct(el._id)
+                // deleteProduct(el._id)
                 location.reload()
               } else {
                 // do nothing

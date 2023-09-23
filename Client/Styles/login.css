@@ -16,7 +16,7 @@ body{
     height:500px;
     background: red;
     overflow: hidden;
-    background: url("/Client/Images/backgroudImage.jpg") no-repeat center / cover;
+    background: url("../Images/backgroudImage.jpg") no-repeat center / cover;
     border-radius: 10px;
     box-shadow: 5px 20px 50px #000 ;
 }
